@@ -1,0 +1,16 @@
+@mixin copy-text-lg {
+    font-size: 2em;
+    color: $p-text;
+}
+  
+@mixin copy-text-md {
+    font-size: 1.5rem;
+    color: $p-text;
+}
+
+@mixin copy-text-sm {
+    font-size: 1em;
+    color: $p-text;
+}
+  
+  

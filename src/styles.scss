@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./scss/mixins/text/copy.scss";
+@import "./scss/mixins/text/heading.scss";
+
+@import "./scss/mixins/breakpoint/screen-size.scss";
+@import "./scss/mixins/breakpoint/media-queries.scss";
+@import "./scss/colours.scss";
+
+
+*{
+    // this is the font size for mobile view, anything above mobile view is 1.5 this value
+    font-size:14px;
+}
+
+
+.app{
+p {
+    @include copy-text-sm;
+
+    @include media-breakpoint-sm-up(){
+        @include copy-text-md;
+    }
+}
+
+h1, .h1{
+    @include heading-text-md;
+    @include media-breakpoint-sm-up(){
+        @include heading-text-lg;
+    }
+}
+
+h2{
+    @include heading-text-sm;
+    @include media-breakpoint-sm-up(){
+        @include heading-text-md;
+    }
+}
+h3{
+    @include heading-text-sm;
+}
+}

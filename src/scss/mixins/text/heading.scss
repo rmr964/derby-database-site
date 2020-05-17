@@ -1,0 +1,16 @@
+@mixin heading-text-lg {
+    font-size: 4em;
+    color: $header-text;
+}
+  
+@mixin heading-text-md {
+    font-size: 3rem;
+    color: $header-text;
+}
+
+@mixin heading-text-sm {
+    font-size: 2em;
+    color: $header-text;
+}
+  
+  
